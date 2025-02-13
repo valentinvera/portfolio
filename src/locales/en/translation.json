@@ -1,0 +1,30 @@
+{
+  "main": {
+    "hero": {
+      "title": "¡Hi, I'm Valentín Vera 👋!",
+      "subtitle": "Frontend developer specialized in React and with experience in Nest creating digital experiences that are",
+      "rotating_texts": ["modern", "fast", "intuitive", "efficient", "secure", "scalable"],
+      "status": {
+        "available": "Available to work",
+        "not_available": "Not available to work"
+      },
+      "calls_to_actions": {
+        "download_cv": "Download CV",
+        "get_in_touch": "Get in touch"
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "items": {
+        "project1": {
+          "title": "Traxity",
+          "description": "Project 1 description"
+        },
+        "project2": {
+          "title": "Project 2",
+          "description": "Project 2 description"
+        }
+      }
+    }
+  }
+}

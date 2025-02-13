@@ -1,0 +1,37 @@
+{
+  "main": {
+    "hero": {
+      "title": "¡Hola, Soy Valentín Vera 👋!",
+      "subtitle": "Desarrollador Frontend especializado en React y con experiencia en Nest creando experiencias digitales que son",
+      "rotating_texts": [
+        "modernas",
+        "rápidas",
+        "intuitivas",
+        "optimizadas",
+        "seguras",
+        "escalables"
+      ],
+      "status": {
+        "available": "Disponible para trabajar",
+        "not_available": "No disponible para trabajar"
+      },
+      "calls_to_actions": {
+        "download_cv": "Descargar CV",
+        "get_in_touch": "Contáctame"
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "items": {
+        "project1": {
+          "title": "Traxity",
+          "description": "Software as a service (SaaS) para la gestión de usuario de profesores de gimnasio."
+        },
+        "project2": {
+          "title": "Proyecto 2",
+          "description": "Descripción del proyecto 2"
+        }
+      }
+    }
+  }
+}
