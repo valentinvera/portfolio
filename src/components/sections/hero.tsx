@@ -26,7 +26,7 @@ const Hero = () => {
         <StatusWork isAvailable={true} />
         <div className="flex gap-4">
           <a
-            href="/CV - Valentín Vera.pdf"
+            href="/static/CV - Valentín Vera.pdf"
             download
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-muted ml:px-8 px-6 ml:py-4 py-4 text-center font-medium ml:text-base text-secondary-foreground text-sm transition-colors hover:bg-muted/80 disabled:pointer-events-none disabled:opacity-50"
           >
