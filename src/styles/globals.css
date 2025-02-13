@@ -8,6 +8,7 @@
 
 @theme {
   --font-sans: "Inter", sans-serif;
+  --breakpoint-ml: 56rem;
 
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
@@ -116,7 +117,16 @@
 }
 
 @layer base {
+  html,
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply min-h-screen w-full;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans flex flex-col;
+  }
+
+  #root {
+    @apply max-w-4xl w-full flex flex-col mx-auto py-12;
   }
 }
