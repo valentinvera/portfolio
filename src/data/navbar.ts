@@ -2,7 +2,7 @@ import { Icons } from "@/icons"
 
 export const NavBarData = {
   navigation: [
-    { href: "/", icon: Icons.house, label: "Home" },
+    { href: "/", icon: Icons.home, label: "Home" },
     { href: "/projects", icon: Icons.code, label: "Projects" },
     { href: "/blog", icon: Icons.notebook, label: "Blog" },
   ],
