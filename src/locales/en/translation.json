@@ -17,7 +17,7 @@
     "hero": {
       "title": "¡Hi, I'm Valentín Vera 👋!",
       "subtitle": "Frontend developer specialized in React and with experience in Nest creating digital experiences that are",
-      "rotating_texts": ["modern", "fast", "intuitive", "efficient", "secure", "scalable"],
+      "rotating_texts": ["modern", "fast", "intuitive", "efficient", "secure", "flexible"],
       "status": {
         "available": "Available to work",
         "not_available": "Not available to work"
@@ -52,7 +52,7 @@
         },
         "TaskFlow": {
           "title": "TaskFlow",
-          "description": "Una plataforma de gestión de tareas diseñada para equipos, con funcionalidades de tableros Kanban, asignación de tareas y notificaciones en tiempo real."
+          "description": "A task management platform designed for teams, featuring Kanban boards, task assignment, and real-time notifications."
         }
       }
     },

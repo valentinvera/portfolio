@@ -17,14 +17,7 @@
     "hero": {
       "title": "¡Hola, Soy Valentín Vera 👋!",
       "subtitle": "Desarrollador Frontend especializado en React y con experiencia en Nest creando experiencias digitales que son",
-      "rotating_texts": [
-        "modernas",
-        "rápidas",
-        "intuitivas",
-        "optimizadas",
-        "seguras",
-        "escalables"
-      ],
+      "rotating_texts": ["modernas", "rápidas", "intuitivas", "eficientes", "seguras", "flexibles"],
       "status": {
         "available": "Disponible para trabajar",
         "not_available": "No disponible para trabajar"
