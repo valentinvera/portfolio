@@ -1,5 +1,19 @@
 {
   "main": {
+    "navbar": {
+      "navigation": {
+        "label": {
+          "house": "Home",
+          "projects": "Projects"
+        }
+      },
+      "theme_toggle": {
+        "label": "Theme"
+      },
+      "language_toggle": {
+        "label": "Language"
+      }
+    },
     "hero": {
       "title": "¡Hi, I'm Valentín Vera 👋!",
       "subtitle": "Frontend developer specialized in React and with experience in Nest creating digital experiences that are",
@@ -25,6 +39,7 @@
           "description": "Project 2 description"
         }
       }
-    }
+    },
+    "skills_title": "Skills"
   }
 }

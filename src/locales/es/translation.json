@@ -1,5 +1,19 @@
 {
   "main": {
+    "navbar": {
+      "navigation": {
+        "label": {
+          "house": "Inicio",
+          "projects": "Proyectos"
+        }
+      },
+      "theme_toggle": {
+        "label": "Tema"
+      },
+      "language_toggle": {
+        "label": "Lenguaje"
+      }
+    },
     "hero": {
       "title": "¡Hola, Soy Valentín Vera 👋!",
       "subtitle": "Desarrollador Frontend especializado en React y con experiencia en Nest creando experiencias digitales que son",
@@ -25,13 +39,14 @@
       "items": {
         "project1": {
           "title": "Traxity",
-          "description": "Software as a service (SaaS) para la gestión de usuario de profesores de gimnasio."
+          "description": "Software as a service (SaaS) para la gestión de usuarios de profesores de gimnasio."
         },
         "project2": {
           "title": "Proyecto 2",
           "description": "Descripción del proyecto 2"
         }
       }
-    }
+    },
+    "skills_title": "Habilidades"
   }
 }
