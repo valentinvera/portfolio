@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils"
 import { type VariantProps, cva } from "class-variance-authority"
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
-import React, { PropsWithChildren, useRef } from "react"
+import React, { PropsWithChildren, useRef, useEffect, useState } from "react"
 
 export interface DockProps extends VariantProps<typeof dockVariants> {
   className?: string
@@ -79,8 +79,21 @@ const DockIcon = ({
   ...props
 }: DockIconProps) => {
   const ref = useRef<HTMLDivElement>(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 896)
+    }
+
+    checkIfMobile()
+
+    window.addEventListener("resize", checkIfMobile)
+    return () => window.removeEventListener("resize", checkIfMobile)
+  }, [])
 
   const distanceCalc = useTransform(mousex, (val: number) => {
+    if (isMobile) return 0
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 }
     return val - bounds.x - bounds.width / 2
   })
@@ -96,7 +109,7 @@ const DockIcon = ({
   return (
     <motion.div
       ref={ref}
-      style={{ width }}
+      style={{ width: isMobile ? 40 : width }}
       className={cn(
         "flex aspect-square cursor-pointer items-center justify-center rounded-full",
         className,
