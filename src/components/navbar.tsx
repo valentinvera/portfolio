@@ -1,4 +1,4 @@
-import ModeToggle from "@/components/mode-toggle"
+import ThemeToggle from "@/components/theme-toggle"
 import { buttonVariants } from "@/components/ui/button"
 import { Dock, DockIcon } from "@/components/ui/dock"
 import { Separator } from "@/components/ui/separator"
@@ -6,8 +6,12 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 import { NavBarData } from "@/data/navbar"
 import { cn } from "@/lib/utils"
 import { Link } from "@tanstack/react-router"
+import { useTranslation } from "react-i18next"
+import LanguageToggle from "./language-toggle"
 
 const NavBar = () => {
+  const { t } = useTranslation()
+
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex h-full max-h-14 origin-bottom">
       <div className="fixed inset-x-0 bottom-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
@@ -24,7 +28,7 @@ const NavBar = () => {
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
-                <p>{item.label}</p>
+                <p>{t(item.label)}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>
@@ -54,10 +58,28 @@ const NavBar = () => {
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
-              <ModeToggle />
+              <div>
+                <ThemeToggle
+                  className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12")}
+                />
+              </div>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Theme</p>
+              <p>{t("main.navbar.theme_toggle.label")}</p>
+            </TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div>
+                <LanguageToggle
+                  className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12")}
+                />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{t("main.navbar.language_toggle.label")}</p>
             </TooltipContent>
           </Tooltip>
         </DockIcon>
