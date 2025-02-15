@@ -30,13 +30,29 @@
     "projects": {
       "title": "Projects",
       "items": {
-        "project1": {
-          "title": "Traxity",
-          "description": "Project 1 description"
+        "FitManage": {
+          "title": "FitManage",
+          "description": "A comprehensive gym management system that streamlines membership handling, workout scheduling, and trainer-student interactions."
         },
-        "project2": {
-          "title": "Project 2",
-          "description": "Project 2 description"
+        "DevSync": {
+          "title": "DevSync",
+          "description": "A real-time collaboration tool for developers, featuring live code sharing, team chat, and version control integrations."
+        },
+        "EcoTrack": {
+          "title": "EcoTrack",
+          "description": "An application that helps users track their carbon footprint and suggests eco-friendly alternatives to reduce environmental impact."
+        },
+        "Foodly": {
+          "title": "Foodly",
+          "description": "A smart meal planning app that generates personalized grocery lists and suggests recipes based on dietary preferences and available ingredients."
+        },
+        "NestAuth": {
+          "title": "NestAuth",
+          "description": "A secure authentication and authorization system built with Nest.js, featuring JWT, OAuth, and multi-factor authentication."
+        },
+        "TaskFlow": {
+          "title": "TaskFlow",
+          "description": "Una plataforma de gestión de tareas diseñada para equipos, con funcionalidades de tableros Kanban, asignación de tareas y notificaciones en tiempo real."
         }
       }
     },
