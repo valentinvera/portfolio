@@ -127,6 +127,47 @@
   }
 
   #root {
-    @apply max-w-4xl w-full flex flex-col mx-auto py-12;
+    @apply max-w-4xl w-full flex flex-col mx-auto py-10;
+  }
+}
+
+@layer utilities {
+  @keyframes scrollX {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-scrollX {
+    animation: scrollX var(--duration) linear infinite;
+  }
+}
+
+@layer utilities {
+  .mask-horizontal::before,
+  .mask-horizontal::after {
+    @apply content-[""] pointer-events-none absolute top-0 bottom-0 w-[10%] z-[2];
+  }
+
+  .mask-horizontal::before {
+    @apply left-0;
+    background: linear-gradient(to right, hsl(var(--background)), transparent);
+  }
+
+  .mask-horizontal::after {
+    @apply right-0;
+    background: linear-gradient(to left, hsl(var(--background)), transparent);
+  }
+
+  .paused .animate-scrollX,
+  .paused .animate-scrollY {
+    animation-play-state: paused !important;
+  }
+  .reverse-x {
+    animation-direction: reverse;
+    animation-delay: -3s;
   }
 }
