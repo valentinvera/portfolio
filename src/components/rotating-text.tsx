@@ -1,4 +1,4 @@
-import { AnimatePresence, Transition, motion } from "framer-motion"
+import { AnimatePresence, Transition, motion } from "motion/react"
 import React, {
   forwardRef,
   useCallback,
