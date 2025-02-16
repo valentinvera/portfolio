@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react"
-import { useTranslation } from "react-i18next" // Importa useTranslation
+import { useTranslation } from "react-i18next"
 
 interface LanguageContextType {
   language: string
