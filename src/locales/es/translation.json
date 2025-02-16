@@ -29,6 +29,7 @@
     },
     "projects": {
       "title": "Proyectos",
+      "see_more": "Ver más",
       "items": {
         "FitManage": {
           "title": "FitManage",
