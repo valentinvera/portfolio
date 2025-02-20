@@ -4,10 +4,13 @@ import { Projects } from "@/types/projects"
 import { Link } from "@tanstack/react-router"
 import { ArrowUpRight } from "lucide-react"
 import { useMemo } from "react"
+import { useTranslation } from "react-i18next"
 import SpotlightCard from "./spotlight-card"
 import { Badge } from "./ui/badge"
+import { FollowerPointerCard } from "./ui/following-pointer"
 
-const ProjectCard = ({ imgUrl, title, description, tags, url, repositoryUrl }: Projects) => {
+const ProjectCard = ({ imgUrl, title, description, tags, url, repositoryUrl, slug }: Projects) => {
+  const { t } = useTranslation()
   const tagIcons = useMemo(() => {
     const tagIconMap = new Map()
     technologies.map(tech => {
@@ -19,9 +22,17 @@ const ProjectCard = ({ imgUrl, title, description, tags, url, repositoryUrl }: P
   return (
     <SpotlightCard spotlightColor="rgba(255, 255, 255, 0.25)">
       <article>
-        <Link to={url} target="_blank">
-          <img src={imgUrl} alt={title} className="h-auto max-h-64 w-full object-cover" />
-        </Link>
+        <FollowerPointerCard title={t("main.projects.following_pointer")}>
+          <Link
+            to="/projects/$slug"
+            params={{
+              slug,
+            }}
+            className="cursor-none"
+          >
+            <img src={imgUrl} alt={title} className="h-auto max-h-64 w-full object-cover" />
+          </Link>
+        </FollowerPointerCard>
         <div className="flex flex-col gap-2 px-4 pt-4 pb-6">
           <div className="flex items-center justify-between">
             <Link
@@ -29,7 +40,7 @@ const ProjectCard = ({ imgUrl, title, description, tags, url, repositoryUrl }: P
               target="_blank"
               className="group flex items-center gap-1.5 decoration-muted-foreground underline-offset-6 hover:underline"
             >
-              <span className="ml:text-xl">{title}</span>
+              <span className="ml:text-xl text-lg">{title}</span>
               <ArrowUpRight
                 size={16}
                 className="size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
