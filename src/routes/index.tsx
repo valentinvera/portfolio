@@ -1,6 +1,7 @@
+import AboutMe from "@/components/sections/about-me"
+import Contact from "@/components/sections/contact"
 import Hero from "@/components/sections/hero"
 import Projects from "@/components/sections/projects"
-import Skills from "@/components/sections/skills"
 import { createFileRoute } from "@tanstack/react-router"
 
 export const Route = createFileRoute("/")({
@@ -9,10 +10,11 @@ export const Route = createFileRoute("/")({
 
 function HomeComponent() {
   return (
-    <main className="px-4 ">
+    <>
       <Hero />
       <Projects />
-      <Skills />
-    </main>
+      <AboutMe />
+      <Contact />
+    </>
   )
 }
