@@ -9,7 +9,7 @@ export const TanStack = ({ size = 16, className, ...props }: IconProps) => (
     x="0px"
     y="0px"
     viewBox="0 0 616 616"
-    enable-background="new 0 0 616 616"
+    enableBackground="new 0 0 616 616"
     xmlSpace="preserve"
     width={size}
     height={size}
