@@ -30,6 +30,9 @@
     "projects": {
       "title": "Proyectos",
       "see_more": "Ver más",
+      "all_projects_page_title": "Todos Mis Proyectos",
+      "placeholder": "Buscar Proyecto",
+      "following_pointer": "Ver proyecto",
       "items": {
         "FitManage": {
           "title": "FitManage",
@@ -55,8 +58,35 @@
           "title": "TaskFlow",
           "description": "Una plataforma de gestión de tareas diseñada para equipos, con funcionalidades de tableros Kanban, asignación de tareas y notificaciones en tiempo real."
         }
-      }
+      },
+      "not_found": "No se encontraron proyectos que coincidan con '{{searchTerm}}'"
     },
-    "skills_title": "Habilidades"
+    "about_me": {
+      "title": "Sobre Mí",
+      "paragraph": "Comencé hace casi dos años y medio en el <strong>desarrollo web</strong>, especializándome en el <strong>Frontend</strong> con <strong>React</strong> y su ecosistema, interesado por crear <strong>interfaces</strong> atractivas y funcionales que mejoren la <strong>experiencia</strong> del usuario. Mi curiosidad por el <strong>Backend</strong> me llevó a explorar <strong>Node</strong>, experimentando con <strong>Express</strong> y profundizando en <strong>Nest</strong> para desarrollar soluciones más <strong>robustas</strong> y <strong>escalables</strong>.",
+      "sub_paragraph": "Desde <strong>Buenos Aires, Argentina</strong>, me mantengo en constante <strong>aprendizaje</strong>, enfrentando nuevos <strong>desafíos</strong>, explorando nuevas <strong>tecnologías</strong> y mejores <strong>prácticas</strong> para seguir mejorando como <strong>desarrollador</strong>. A continuación, te muestro algunas de las <strong>tecnologías</strong> que uso diariamente."
+    },
+    "contact_me": {
+      "title": "Contáctame",
+      "description": "¿Tiene alguna idea o proyecto que le gustaría comentar? No dude en enviarme un correo electrónico:",
+      "form": {
+        "labels": {
+          "name": "Nombre",
+          "email": "Correo electrónico",
+          "message": "Mensaje"
+        },
+        "placeholders": {
+          "name": "John Doe",
+          "email": "johndoe@gmail.com",
+          "message": "Hola Valentín! Me gustaría hablar de..."
+        },
+        "errors": {
+          "name_min": "El nombre debe tener al menos 2 caracteres.",
+          "email_invalid": "Por favor, ingresa un correo electrónico válido.",
+          "message_min": "El mensaje debe tener al menos 10 caracteres."
+        },
+        "call_to_action": "Enviar"
+      }
+    }
   }
 }
