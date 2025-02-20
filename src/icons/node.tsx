@@ -31,11 +31,11 @@ export const Nodejs = ({ size = 16, className, ...props }: IconProps) => (
         gradientTransform="translate(-129.242 -73.715)scale(6.18523)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3F873F" />
-        <stop offset=".33" stop-color="#3F8B3D" />
-        <stop offset=".637" stop-color="#3E9638" />
-        <stop offset=".934" stop-color="#3DA92E" />
-        <stop offset="1" stop-color="#3DAE2B" />
+        <stop stopColor="#3F873F" />
+        <stop offset=".33" stopColor="#3F8B3D" />
+        <stop offset=".637" stopColor="#3E9638" />
+        <stop offset=".934" stopColor="#3DA92E" />
+        <stop offset="1" stopColor="#3DAE2B" />
       </linearGradient>
       <linearGradient
         id="IconifyId19507057acbaad8991"
@@ -46,10 +46,10 @@ export const Nodejs = ({ size = 16, className, ...props }: IconProps) => (
         gradientTransform="translate(-129.242 -73.715)scale(6.18523)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".138" stop-color="#3F873F" />
-        <stop offset=".402" stop-color="#52A044" />
-        <stop offset=".713" stop-color="#64B749" />
-        <stop offset=".908" stop-color="#6ABF4B" />
+        <stop offset=".138" stopColor="#3F873F" />
+        <stop offset=".402" stopColor="#52A044" />
+        <stop offset=".713" stopColor="#64B749" />
+        <stop offset=".908" stopColor="#6ABF4B" />
       </linearGradient>
       <linearGradient
         id="IconifyId19507057acbaad8992"
@@ -60,10 +60,10 @@ export const Nodejs = ({ size = 16, className, ...props }: IconProps) => (
         gradientTransform="translate(-129.242 -73.715)scale(6.18523)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".092" stop-color="#6ABF4B" />
-        <stop offset=".287" stop-color="#64B749" />
-        <stop offset=".598" stop-color="#52A044" />
-        <stop offset=".862" stop-color="#3F873F" />
+        <stop offset=".092" stopColor="#6ABF4B" />
+        <stop offset=".287" stopColor="#64B749" />
+        <stop offset=".598" stopColor="#52A044" />
+        <stop offset=".862" stopColor="#3F873F" />
       </linearGradient>
     </defs>
   </svg>
