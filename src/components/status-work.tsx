@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils/cn"
 import { useTranslation } from "react-i18next"
 
 interface Props {
