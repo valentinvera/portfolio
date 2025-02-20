@@ -10,9 +10,9 @@ const Hero = () => {
   }) as unknown as string[]
 
   return (
-    <section>
+    <section className="pb-30">
       <div className="flex flex-col gap-2 ml:gap-6 sm:gap-4">
-        <h1 className="pr-4 font-bold ml:text-5xl text-4xl leading-tight sm:pr-0 sm:leading-none">
+        <h1 className="font-bold ml:text-5xl text-4xl leading-tight sm:pr-0 sm:leading-none">
           {t("main.hero.title")}
         </h1>
         <div className="ml:-mb-3 ml:w-[80%] ml:text-xl text-muted-foreground sm:w-[65%]">
@@ -24,7 +24,7 @@ const Hero = () => {
           />
         </div>
         <StatusWork isAvailable={true} />
-        <div className="flex gap-4">
+        <div className="flex gap-6">
           <a
             href="/static/CV - Valentín Vera.pdf"
             download
