@@ -1,3 +1,4 @@
+import { slug } from "@/lib/utils/slug"
 import { Projects } from "@/types/projects"
 import { useTranslation } from "react-i18next"
 
@@ -22,6 +23,7 @@ export const ProjectsData = (): Projects[] => {
       ],
       url: "https://www.jsconf.es/",
       repositoryUrl: "https://github.com/valentinvera",
+      slug: slug(t("main.projects.items.FitManage.title")),
     },
     {
       imgUrl: "https://unblast.com/wp-content/uploads/2019/01/App-Mockup-1024x768.jpg",
@@ -40,6 +42,7 @@ export const ProjectsData = (): Projects[] => {
       ],
       url: "https://www.jsconf.es/",
       repositoryUrl: "https://github.com/valentinvera",
+      slug: slug(t("main.projects.items.DevSync.title")),
     },
     {
       imgUrl: "https://unblast.com/wp-content/uploads/2019/01/App-Mockup-1024x768.jpg",
@@ -58,6 +61,7 @@ export const ProjectsData = (): Projects[] => {
       ],
       url: "https://www.jsconf.es/",
       repositoryUrl: "https://github.com/valentinvera",
+      slug: slug(t("main.projects.items.EcoTrack.title")),
     },
     {
       imgUrl: "https://unblast.com/wp-content/uploads/2019/01/App-Mockup-1024x768.jpg",
@@ -76,6 +80,7 @@ export const ProjectsData = (): Projects[] => {
       ],
       url: "https://www.jsconf.es/",
       repositoryUrl: "https://github.com/valentinvera",
+      slug: slug(t("main.projects.items.Foodly.title")),
     },
     {
       imgUrl: "https://unblast.com/wp-content/uploads/2019/01/App-Mockup-1024x768.jpg",
@@ -94,6 +99,7 @@ export const ProjectsData = (): Projects[] => {
       ],
       url: "https://www.jsconf.es/",
       repositoryUrl: "https://github.com/valentinvera",
+      slug: slug(t("main.projects.items.NestAuth.title")),
     },
     {
       imgUrl: "https://unblast.com/wp-content/uploads/2019/01/App-Mockup-1024x768.jpg",
@@ -112,6 +118,7 @@ export const ProjectsData = (): Projects[] => {
       ],
       url: "https://www.jsconf.es/",
       repositoryUrl: "https://github.com/valentinvera",
+      slug: slug(t("main.projects.items.TaskFlow.title")),
     },
   ]
 }
