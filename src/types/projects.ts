@@ -23,4 +23,5 @@ export interface Projects {
   tags: Stack[]
   url: string
   repositoryUrl: string
+  slug: string
 }
