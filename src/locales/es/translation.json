@@ -87,6 +87,13 @@
         },
         "call_to_action": "Enviar"
       }
+    },
+    "errors": {
+      "not_found": {
+        "message": "Ups, algo salió mal.",
+        "error": "Lo siento, no pude encontrar tu página.",
+        "call_to_action": "Volver"
+      }
     }
   }
 }

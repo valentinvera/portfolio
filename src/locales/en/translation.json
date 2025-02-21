@@ -87,6 +87,13 @@
         },
         "call_to_action": "Send"
       }
+    },
+    "errors": {
+      "not_found": {
+        "message": "Oops, something went wrong.",
+        "error": "Sorry, I couldn't find your page.",
+        "call_to_action": "Back"
+      }
     }
   }
 }
