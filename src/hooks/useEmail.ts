@@ -1,8 +1,16 @@
 import emailjs from "@emailjs/browser"
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+const getEnvVariable = (key: string) => {
+  if (import.meta.env.MODE === "production") {
+    return import.meta.env[key]
+  } else {
+    return import.meta.env[`VITE_${key}`]
+  }
+}
+
+const SERVICE_ID = getEnvVariable("EMAILJS_SERVICE_ID")
+const TEMPLATE_ID = getEnvVariable("EMAILJS_TEMPLATE_ID")
+const PUBLIC_KEY = getEnvVariable("EMAILJS_PUBLIC_KEY")
 
 interface EmailParams {
   to_name: string
