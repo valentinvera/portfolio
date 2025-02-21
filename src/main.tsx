@@ -3,21 +3,14 @@ import { createRoot } from "react-dom/client"
 import "./styles/globals.css"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { NotFoundRoute, RouterProvider, createRouter } from "@tanstack/react-router"
-import NotFound from "./components/not-found"
+import { RouterProvider, createRouter } from "@tanstack/react-router"
 import { routeTree } from "./routeTree.gen"
 import "./i18n"
 import { LanguageProvider } from "@/components/providers/language-provider"
 
-const notFoundRoute = new NotFoundRoute({
-  getParentRoute: () => routeTree,
-  component: NotFound,
-})
-
 const router = createRouter({
   routeTree,
   defaultPreload: "intent",
-  notFoundRoute,
 })
 
 declare module "@tanstack/react-router" {
