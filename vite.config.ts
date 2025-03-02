@@ -9,6 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     TanStackRouterVite({
+      target: "react",
       autoCodeSplitting: true,
     }),
   ],
