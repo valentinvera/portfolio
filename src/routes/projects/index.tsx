@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/project-card"
 import { Input } from "@/components/ui/input"
 import { ProjectsData } from "@/data/projects"
+import { useDocumentTitle } from "@/hooks/useDocumentTitle"
 import { Icons } from "@/icons"
 import { createFileRoute } from "@tanstack/react-router"
 import { useState } from "react"
@@ -12,9 +13,12 @@ export const Route = createFileRoute("/projects/")({
 
 function ProjectsComponent() {
   const projects = ProjectsData()
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [searchTerm, setSearchTerm] = useState<string>("")
 
+  useDocumentTitle(
+    i18n.language === "es" ? "Valentín Vera - Proyectos" : "Valentín Vera - Projects",
+  )
   const filteredProjects = projects.filter(project =>
     project.title.toLowerCase().includes(searchTerm.toLowerCase()),
   )
