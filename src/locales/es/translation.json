@@ -34,29 +34,9 @@
       "placeholder": "Buscar Proyecto",
       "following_pointer": "Ver proyecto",
       "items": {
-        "FitManage": {
-          "title": "FitManage",
-          "description": "Un completo sistema de gestión para gimnasios que facilita el manejo de membresías, la programación de entrenamientos y la interacción entre entrenadores y alumnos."
-        },
-        "DevSync": {
-          "title": "DevSync",
-          "description": "Una herramienta de colaboración en tiempo real para desarrolladores, con funciones de compartir código en vivo, chat de equipo e integración con control de versiones."
-        },
-        "EcoTrack": {
-          "title": "EcoTrack",
-          "description": "Aplicación que ayuda a los usuarios a monitorear su huella de carbono y sugiere alternativas ecológicas para reducir el impacto ambiental."
-        },
-        "Foodly": {
-          "title": "Foodly",
-          "description": "Una aplicación inteligente de planificación de comidas que genera listas de compras personalizadas y sugiere recetas basadas en preferencias dietéticas e ingredientes disponibles."
-        },
-        "NestAuth": {
-          "title": "NestAuth",
-          "description": "Un sistema seguro de autenticación y autorización desarrollado con Nest.js, que incluye JWT, OAuth y autenticación multifactor."
-        },
-        "TaskFlow": {
-          "title": "TaskFlow",
-          "description": "Una plataforma de gestión de tareas diseñada para equipos, con funcionalidades de tableros Kanban, asignación de tareas y notificaciones en tiempo real."
+        "Traxity": {
+          "title": "Traxity",
+          "description": "Software como servicio para la gestión de usuarios, la compra de servicios y la interacción entre usuarios"
         }
       },
       "not_found": "No se encontraron proyectos que coincidan con '{{searchTerm}}'"
