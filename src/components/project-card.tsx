@@ -9,7 +9,7 @@ import SpotlightCard from "./spotlight-card"
 import { Badge } from "./ui/badge"
 import { FollowerPointerCard } from "./ui/following-pointer"
 
-const ProjectCard = ({ imgUrl, title, description, tags, url, repositoryUrl, slug }: Projects) => {
+const ProjectCard = ({ title, description, tags, url, repositoryUrl, slug }: Projects) => {
   const { t } = useTranslation()
   const tagIcons = useMemo(() => {
     const tagIconMap = new Map()
