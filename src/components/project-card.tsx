@@ -30,7 +30,7 @@ const ProjectCard = ({ imgUrl, title, description, tags, url, repositoryUrl, slu
             }}
             className="cursor-none"
           >
-            <img src={imgUrl} alt={title} className="h-auto max-h-64 w-full object-cover" />
+            {/* <img src={imgUrl} alt={title} className="h-auto max-h-64 w-full object-cover" /> */}
           </Link>
         </FollowerPointerCard>
         <div className="flex flex-col gap-2 px-4 pt-4 pb-6">
