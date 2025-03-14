@@ -23,7 +23,16 @@ const ProjectCard = ({ title, description, tags, url, repositoryUrl }: Projects)
     <SpotlightCard spotlightColor="rgba(255, 255, 255, 0.25)">
       <article>
         <FollowerPointerCard title={t("main.projects.following_pointer")}>
-          <Link to={url} target="_blank" className="cursor-none">
+          <Link
+            to={url}
+            target="_blank"
+            className="cursor-none"
+            aria-label={
+              i18n.language === "es"
+                ? `Abrir sitio web del proyecto ${title}`
+                : `Open project web site ${title}`
+            }
+          >
             {/* <img src={imgUrl} alt={title} className="h-auto max-h-64 w-full object-cover" /> */}
           </Link>
         </FollowerPointerCard>
@@ -33,6 +42,11 @@ const ProjectCard = ({ title, description, tags, url, repositoryUrl }: Projects)
               to={url}
               target="_blank"
               className="group flex items-center gap-1.5 decoration-muted-foreground underline-offset-6 hover:underline"
+              aria-label={
+                i18n.language === "es"
+                  ? `Abrir sitio web del proyecto ${title}`
+                  : `Open project web site ${title}`
+              }
             >
               <span className="ml:text-xl text-lg">{title}</span>
               <ArrowUpRight

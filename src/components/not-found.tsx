@@ -13,6 +13,7 @@ const NotFound = () => {
       <Link
         to="/"
         className="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-foreground px-3 py-2 text-background hover:bg-primary/90"
+        aria-label={t("main.errors.not_found.call_to_action")}
       >
         <Icons.arrowRight
           size={16}

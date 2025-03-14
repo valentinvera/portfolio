@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 import ProjectCard from "../project-card"
 
 const Projects = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const projects = ProjectsData()
 
   return (
@@ -18,6 +18,7 @@ const Projects = () => {
           <Link
             to="/projects"
             className="group flex items-center gap-1 text-muted-foreground transition-colors duration-200 hover:text-foreground"
+            aria-label={i18n.language === "es" ? "Ver más proyectos" : "See more projects"}
           >
             <span>{t("main.projects.see_more")}</span>
             <Icons.arrowRight
