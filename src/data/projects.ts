@@ -1,4 +1,3 @@
-import { slug } from "@/lib/utils/slug"
 import { Projects } from "@/types/projects"
 import { useTranslation } from "react-i18next"
 
@@ -22,7 +21,6 @@ export const ProjectsData = (): Projects[] => {
       ],
       url: "https://traxity.com",
       repositoryUrl: "https://github.com/valentinvera/Traxity",
-      slug: slug(t("main.projects.items.Traxity.title")),
     },
   ]
 }
