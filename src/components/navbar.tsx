@@ -23,6 +23,7 @@ const NavBar = () => {
                 <Link
                   to={item.href}
                   className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12")}
+                  aria-label={item.label}
                 >
                   <item.icon size={16} className="size-4" />
                 </Link>

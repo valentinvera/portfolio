@@ -10,7 +10,7 @@ import { Badge } from "./ui/badge"
 import { FollowerPointerCard } from "./ui/following-pointer"
 
 const ProjectCard = ({ title, description, tags, url, repositoryUrl }: Projects) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const tagIcons = useMemo(() => {
     const tagIconMap = new Map()
     technologies.map(tech => {
@@ -40,7 +40,15 @@ const ProjectCard = ({ title, description, tags, url, repositoryUrl }: Projects)
                 className="size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
               />
             </Link>
-            <Link to={repositoryUrl} target="_blank">
+            <Link
+              to={repositoryUrl}
+              target="_blank"
+              aria-label={
+                i18n.language === "es"
+                  ? `Abrir repositorio del proyecto ${title} en github`
+                  : `Open ${title} project repository in github`
+              }
+            >
               <Icons.github size={16} className="size-4" />
             </Link>
           </div>
