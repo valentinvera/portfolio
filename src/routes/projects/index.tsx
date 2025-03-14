@@ -60,7 +60,7 @@ function ProjectsComponent() {
       ) : (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {filteredProjects.map(
-            ({ imgUrl, title, description, tags, url, repositoryUrl, slug }, index) => (
+            ({ imgUrl, title, description, tags, url, repositoryUrl }, index) => (
               <ProjectCard
                 key={index}
                 imgUrl={imgUrl}
@@ -69,7 +69,6 @@ function ProjectsComponent() {
                 tags={tags}
                 url={url}
                 repositoryUrl={repositoryUrl}
-                slug={slug}
               />
             ),
           )}

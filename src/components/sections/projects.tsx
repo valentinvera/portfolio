@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {projects
             .slice(0, 4)
-            .map(({ imgUrl, title, description, tags, url, repositoryUrl, slug }, index) => (
+            .map(({ imgUrl, title, description, tags, url, repositoryUrl }, index) => (
               <ProjectCard
                 key={index}
                 imgUrl={imgUrl}
@@ -38,7 +38,6 @@ const Projects = () => {
                 tags={tags}
                 url={url}
                 repositoryUrl={repositoryUrl}
-                slug={slug}
               />
             ))}
         </div>
