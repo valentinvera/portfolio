@@ -45,6 +45,7 @@ const NavBar = () => {
                     to={social.url}
                     target="_blank"
                     className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "size-12")}
+                    aria-label={social.name}
                   >
                     <social.icon size={16} className="size-4" />
                   </Link>
