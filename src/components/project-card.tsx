@@ -9,7 +9,7 @@ import SpotlightCard from "./spotlight-card"
 import { Badge } from "./ui/badge"
 import { FollowerPointerCard } from "./ui/following-pointer"
 
-const ProjectCard = ({ title, description, tags, url, repositoryUrl, slug }: Projects) => {
+const ProjectCard = ({ title, description, tags, url, repositoryUrl }: Projects) => {
   const { t } = useTranslation()
   const tagIcons = useMemo(() => {
     const tagIconMap = new Map()
@@ -23,13 +23,7 @@ const ProjectCard = ({ title, description, tags, url, repositoryUrl, slug }: Pro
     <SpotlightCard spotlightColor="rgba(255, 255, 255, 0.25)">
       <article>
         <FollowerPointerCard title={t("main.projects.following_pointer")}>
-          <Link
-            to="/projects/$slug"
-            params={{
-              slug,
-            }}
-            className="cursor-none"
-          >
+          <Link to={url} target="_blank" className="cursor-none">
             {/* <img src={imgUrl} alt={title} className="h-auto max-h-64 w-full object-cover" /> */}
           </Link>
         </FollowerPointerCard>
@@ -51,7 +45,7 @@ const ProjectCard = ({ title, description, tags, url, repositoryUrl, slug }: Pro
             </Link>
           </div>
           <p className="mb-2 ml:text-lg text-muted-foreground">{description}</p>
-          <div className="flex flex-wrap items-center gap-2 ">
+          <div className="flex flex-wrap items-center gap-2">
             {tags.map(tag => (
               <Badge
                 key={tag}
