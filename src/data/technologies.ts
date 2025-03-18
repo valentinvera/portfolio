@@ -9,6 +9,14 @@ interface Technologies {
 
 export const technologies: Technologies[] = [
   {
+    stack: "Uptash",
+    icon: Icons.uptash,
+  },
+  {
+    stack: "Supabase",
+    icon: Icons.supabase,
+  },
+  {
     stack: "TypeORM",
     icon: Icons.typeorm,
   },
