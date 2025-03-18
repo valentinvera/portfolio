@@ -27,10 +27,12 @@ import { Sass } from "./sass"
 import { Search } from "./search"
 import { Send } from "./send"
 import { Shadcn } from "./shadcn"
+import { Supabase } from "./supabase"
 import { TailwindCSS } from "./tailwindcss"
 import { TanStack } from "./tanstack"
 import { TypeORM } from "./typeorm"
 import { TypeScript } from "./typescript"
+import { Upstash } from "./uptash"
 import { Vite } from "./vite"
 import { Vitest } from "./vitest"
 import { X } from "./x"
@@ -72,4 +74,6 @@ export const Icons = {
   check: Check,
   search: Search,
   x: X,
+  supabase: Supabase,
+  uptash: Upstash,
 }
