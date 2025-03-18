@@ -4,7 +4,6 @@ export const NavBarData = {
   navigation: [
     { href: "/", icon: Icons.house, label: "main.navbar.navigation.label.house" },
     { href: "/projects", icon: Icons.code, label: "main.navbar.navigation.label.projects" },
-    { href: "/blog", icon: Icons.notebook, label: "Blog" },
   ],
   contact: {
     social: {
