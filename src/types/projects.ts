@@ -15,6 +15,8 @@ export type Stack =
   | "DrizzleORM"
   | "Hono"
   | "Astro"
+  | "Supabase"
+  | "Uptash"
 
 export interface Projects {
   imgUrl: string
