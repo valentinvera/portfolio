@@ -6,7 +6,7 @@ const AboutMe = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="ml:scroll-mt-[-500px] scroll-mt-[-760px] pb-30" id="contact">
+    <section className="ml:scroll-mt-[-500px] scroll-mt-[-760px] pb-40" id="contact">
       <h2 className="mb-2 ml:mb-4 font-medium ml:text-3xl text-2xl">{t("main.about_me.title")}</h2>
       <div className="flex flex-col gap-2">
         <p
