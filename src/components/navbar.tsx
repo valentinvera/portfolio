@@ -28,7 +28,7 @@ const NavBar = () => {
                   <item.icon size={16} className="size-4" />
                 </Link>
               </TooltipTrigger>
-              <TooltipContent>
+              <TooltipContent sideOffset={10}>
                 <p>{t(item.label)}</p>
               </TooltipContent>
             </Tooltip>
@@ -50,7 +50,7 @@ const NavBar = () => {
                     <social.icon size={16} className="size-4" />
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent>
+                <TooltipContent sideOffset={10}>
                   <p>{name}</p>
                 </TooltipContent>
               </Tooltip>
@@ -66,7 +66,7 @@ const NavBar = () => {
                 />
               </div>
             </TooltipTrigger>
-            <TooltipContent>
+            <TooltipContent sideOffset={10}>
               <p>{t("main.navbar.theme_toggle.label")}</p>
             </TooltipContent>
           </Tooltip>
@@ -80,7 +80,7 @@ const NavBar = () => {
                 />
               </div>
             </TooltipTrigger>
-            <TooltipContent>
+            <TooltipContent sideOffset={10}>
               <p>{t("main.navbar.language_toggle.label")}</p>
             </TooltipContent>
           </Tooltip>
