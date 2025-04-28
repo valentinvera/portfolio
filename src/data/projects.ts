@@ -21,8 +21,8 @@ export const ProjectsData = (): Projects[] => {
         "Shadcn/ui",
         "Tailwind CSS",
       ],
-      url: "https://traxityapp.com",
-      repositoryUrl: "https://github.com/usetraxity/traxity",
+      url: "https://traxity.vercel.app",
+      repositoryUrl: "https://github.com/valentinvera/traxity",
     },
   ]
 }
