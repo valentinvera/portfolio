@@ -1,3 +1,7 @@
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useState } from "react"
+import { useForm } from "react-hook-form"
+import { useTranslation } from "react-i18next"
 import { Button } from "@/components/ui/button"
 import {
   Form,
@@ -12,10 +16,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { useEmail } from "@/hooks/useEmail"
 import { Icons } from "@/icons"
 import { ContactFormValues, createContactFormSchema } from "@/schemas/contact-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useState } from "react"
-import { useForm } from "react-hook-form"
-import { useTranslation } from "react-i18next"
 
 const ContactForm = () => {
   const { sendEmail } = useEmail()
@@ -81,7 +81,7 @@ const ContactForm = () => {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="flex w-full flex-col gap-0.5 ">
+              <FormItem className="flex w-full flex-col gap-0.5">
                 <FormLabel>{t("main.contact_me.form.labels.email")}</FormLabel>
                 <FormControl>
                   <Input placeholder={t("main.contact_me.form.placeholders.email")} {...field} />

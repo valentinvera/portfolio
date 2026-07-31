@@ -1,6 +1,6 @@
+import type { ElementType } from "react"
 import { Icons } from "@/icons"
 import type { Stack } from "@/types/projects"
-import type { ElementType } from "react"
 
 interface Technologies {
   stack: Stack

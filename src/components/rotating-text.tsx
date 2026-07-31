@@ -1,4 +1,4 @@
-import { AnimatePresence, Transition, motion } from "motion/react"
+import { AnimatePresence, motion, Transition } from "motion/react"
 import React, {
   forwardRef,
   useCallback,
@@ -10,6 +10,22 @@ import React, {
 
 const cn = (...classes: (string | undefined | null | boolean)[]): string =>
   classes.filter(Boolean).join(" ")
+
+type MotionSpanProps = React.ComponentPropsWithoutRef<typeof motion.span>
+
+interface GraphemeSegment {
+  segment: string
+}
+
+interface Segmenter {
+  segment: (text: string) => Iterable<GraphemeSegment>
+}
+
+type SegmenterConstructor = new (locale: string, options: { granularity: "grapheme" }) => Segmenter
+
+type IntlWithSegmenter = typeof Intl & {
+  Segmenter?: SegmenterConstructor
+}
 
 export interface RotatingTextRef {
   next: () => void
@@ -25,9 +41,9 @@ export interface RotatingTextProps
   > {
   texts: string[]
   transition?: Transition
-  initial?: any
-  animate?: any
-  exit?: any
+  initial?: MotionSpanProps["initial"]
+  animate?: MotionSpanProps["animate"]
+  exit?: MotionSpanProps["exit"]
   animatePresenceMode?: "sync" | "wait"
   animatePresenceInitial?: boolean
   rotationInterval?: number
@@ -68,13 +84,15 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
   ) => {
     const [currentTextIndex, setCurrentTextIndex] = useState<number>(0)
 
-    const splitIntoCharacters = (text: string): string[] => {
-      if (typeof Intl !== "undefined" && (Intl as any).Segmenter) {
-        const segmenter = new (Intl as any).Segmenter("en", { granularity: "grapheme" })
-        return Array.from(segmenter.segment(text), (segment: any) => segment.segment)
+    const splitIntoCharacters = useCallback((text: string): string[] => {
+      const Segmenter = (Intl as IntlWithSegmenter).Segmenter
+
+      if (typeof Intl !== "undefined" && Segmenter) {
+        const segmenter = new Segmenter("en", { granularity: "grapheme" })
+        return Array.from(segmenter.segment(text), segment => segment.segment)
       }
       return Array.from(text)
-    }
+    }, [])
 
     const elements = useMemo(() => {
       const currentText: string = texts[currentTextIndex]
@@ -102,7 +120,7 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
         characters: [part],
         needsSpace: i !== arr.length - 1,
       }))
-    }, [texts, currentTextIndex, splitBy])
+    }, [texts, currentTextIndex, splitBy, splitIntoCharacters])
 
     const getStaggerDelay = useCallback(
       (index: number, totalChars: number): number => {

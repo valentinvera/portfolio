@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils/cn"
-import { AnimatePresence, motion, useMotionValue } from "framer-motion"
+import { AnimatePresence, type MotionValue, motion, useMotionValue } from "framer-motion"
 import React, { useState } from "react"
+import { cn } from "@/lib/utils/cn"
 
 export const FollowerPointerCard = ({
   children,
@@ -52,8 +52,8 @@ export const FollowPointer = ({
   y,
   title,
 }: {
-  x: any
-  y: any
+  x: MotionValue<number>
+  y: MotionValue<number>
   title?: string | React.ReactNode
 }) => {
   return (

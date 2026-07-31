@@ -1,6 +1,6 @@
-import { Icons } from "@/icons"
 import { Link } from "@tanstack/react-router"
 import { useTranslation } from "react-i18next"
+import { Icons } from "@/icons"
 
 const NotFound = () => {
   const { t } = useTranslation()
@@ -17,7 +17,7 @@ const NotFound = () => {
       >
         <Icons.arrowRight
           size={16}
-          className="group-hover:-translate-x-0.5 size-4 rotate-180 transition-transform"
+          className="size-4 rotate-180 transition-transform group-hover:-translate-x-0.5"
         />
         <span>{t("main.errors.not_found.call_to_action")}</span>
       </Link>

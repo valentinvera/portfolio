@@ -1,11 +1,11 @@
+import { createFileRoute } from "@tanstack/react-router"
+import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import ProjectCard from "@/components/project-card"
 import { Input } from "@/components/ui/input"
 import { ProjectsData } from "@/data/projects"
 import { useDocumentTitle } from "@/hooks/useDocumentTitle"
 import { Icons } from "@/icons"
-import { createFileRoute } from "@tanstack/react-router"
-import { useState } from "react"
-import { useTranslation } from "react-i18next"
 
 export const Route = createFileRoute("/projects/")({
   component: ProjectsComponent,
