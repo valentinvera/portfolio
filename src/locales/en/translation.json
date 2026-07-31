@@ -3,8 +3,7 @@
     "navbar": {
       "navigation": {
         "label": {
-          "house": "Home",
-          "projects": "Projects"
+          "house": "Home"
         }
       },
       "theme_toggle": {
@@ -16,16 +15,7 @@
     },
     "hero": {
       "title": "¡Hi, I'm Valentín Vera 👋!",
-      "subtitle": "Frontend developer specialized in React and with experience in Nest creating digital experiences that are",
-      "rotating_texts": ["modern", "fast", "intuitive", "efficient", "secure", "flexible"],
-      "status": {
-        "available": "Available to work",
-        "not_available": "Not available to work"
-      },
-      "calls_to_actions": {
-        "download_cv": "Download CV",
-        "get_in_touch": "Get in touch"
-      }
+      "subtitle": "Full Stack Developer and product creator building products that help people and solve real problems."
     },
     "projects": {
       "title": "Projects",
@@ -34,17 +24,20 @@
       "placeholder": "Search Project",
       "following_pointer": "See project",
       "items": {
-        "Traxity": {
-          "title": "traxity",
-          "description": "Software as a service for user management, purchase of services and interaction between users"
+        "Motiq": {
+          "title": "Motiq",
+          "description": "Customer intelligence platform for B2B SaaS teams with AI agents that monitor feedback 24/7, detect critical signals, and alert the right people."
         }
       },
       "not_found": "No projects were found matching '{{searchTerm}}'"
     },
     "about_me": {
       "title": "About Me",
-      "paragraph": "I started almost two and a half years ago in <strong>web development</strong>, specializing in <strong>Frontend</strong> with <strong>React</strong> and its ecosystem, interested in creating attractive and functional <strong>interfaces</strong> that improve the user <strong>experience</strong>. My curiosity for the <strong>Backend</strong> led me to explore <strong>Node</strong>, experimenting with <strong>Express</strong> and deepening in <strong>Nest</strong> to develop more <strong>robust</strong> and <strong>scalable</strong> solutions.",
-      "sub_paragraph": "From <strong>Buenos Aires, Argentina</strong>, I am constantly <strong>learning</strong>, facing new <strong>challenges</strong>, exploring new <strong>technologies</strong> and best <strong>practices</strong> to keep improving as a <strong>developer</strong>. Below, I show you some of the <strong>technologies</strong> I use on a daily basis."
+      "paragraph": "I like building <strong>products</strong> that solve real problems. I enjoy bringing <strong>design</strong>, <strong>development</strong>, and simple ideas together to create useful experiences that are easy to use.",
+      "sub_paragraph": "I like thinking through the whole path: understanding what a person needs, designing a clear solution, and building it so it works well. To me, a good product should <strong>help</strong>, <strong>solve</strong>, and make things simpler."
+    },
+    "skills": {
+      "title": "Skills"
     },
     "contact_me": {
       "title": "Contact Me",

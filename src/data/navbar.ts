@@ -1,10 +1,7 @@
 import { Icons } from "@/icons"
 
 export const NavBarData = {
-  navigation: [
-    { href: "/", icon: Icons.house, label: "main.navbar.navigation.label.house" },
-    { href: "/projects", icon: Icons.code, label: "main.navbar.navigation.label.projects" },
-  ],
+  navigation: [{ href: "/", icon: Icons.house, label: "main.navbar.navigation.label.house" }],
   contact: {
     social: {
       GitHub: {
@@ -19,12 +16,17 @@ export const NavBarData = {
         icon: Icons.linkedin,
         navbar: true,
       },
-      Mail: {
-        name: "Mail",
-        url: "mailto:valentinvera2805@gmail.com",
-        icon: Icons.mail,
+      X: {
+        name: "X",
+        url: "https://x.com/vvalentinvera",
+        icon: Icons.xTwitter,
         navbar: true,
       },
     },
+  },
+  cv: {
+    name: "CV",
+    url: "/static/CV - Valentín Vera.pdf",
+    icon: Icons.download,
   },
 }

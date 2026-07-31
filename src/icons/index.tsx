@@ -2,7 +2,6 @@ import { ArrowRight } from "./arrow-right"
 import { ArrowUpRight } from "./arrow-up-right"
 import { Astro } from "./astro"
 import { Check } from "./check"
-import { Code } from "./code"
 import { Docker } from "./docker"
 import { Download } from "./download"
 import { Expressjs } from "./express"
@@ -36,13 +35,13 @@ import { Upstash } from "./uptash"
 import { Vite } from "./vite"
 import { Vitest } from "./vitest"
 import { X } from "./x"
+import { XTwitter } from "./x-twitter"
 
 export const Icons = {
   house: House,
   github: Github,
   linkedin: Linkedin,
   mail: Mail,
-  code: Code,
   notebook: Notebook,
   download: Download,
   arrowUpRight: ArrowUpRight,
@@ -74,6 +73,7 @@ export const Icons = {
   check: Check,
   search: Search,
   x: X,
+  xTwitter: XTwitter,
   supabase: Supabase,
   uptash: Upstash,
 }

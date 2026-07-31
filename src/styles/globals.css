@@ -111,7 +111,7 @@
   }
 
   #root {
-    @apply max-w-4xl w-full flex flex-col mx-auto px-4 py-20;
+    @apply max-w-4xl w-full flex flex-col mx-auto px-4 pt-6 pb-20;
   }
 }
 
@@ -121,7 +121,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
   }
 

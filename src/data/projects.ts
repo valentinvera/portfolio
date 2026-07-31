@@ -1,28 +1,27 @@
-import { Projects } from "@/types/projects"
 import { useTranslation } from "react-i18next"
+import { Projects } from "@/types/projects"
 
 export const ProjectsData = (): Projects[] => {
   const { t } = useTranslation()
 
   return [
     {
-      imgUrl: "",
-      title: t("main.projects.items.Traxity.title"),
-      description: t("main.projects.items.Traxity.description"),
+      imgUrl: "https://motiq.app/og-image.png",
+      title: t("main.projects.items.Motiq.title"),
+      description: t("main.projects.items.Motiq.description"),
       tags: [
         "TypeScript",
-        "Nest",
         "React",
-        "Docker",
-        "Supabase",
-        "Prisma",
+        "Hono",
+        "DrizzleORM",
+        "PostgreSQL",
         "Redis",
         "Uptash",
         "Shadcn/ui",
         "Tailwind CSS",
       ],
-      url: "https://traxity.vercel.app",
-      repositoryUrl: "https://github.com/valentinvera/traxity",
+      url: "https://motiq.app",
+      repositoryUrl: "https://github.com/valentinvera/motiq",
     },
   ]
 }

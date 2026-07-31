@@ -1,15 +1,15 @@
-import { technologies } from "@/data/technologies"
-import { Icons } from "@/icons"
-import { Projects } from "@/types/projects"
 import { Link } from "@tanstack/react-router"
 import { ArrowUpRight } from "lucide-react"
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
+import { technologies } from "@/data/technologies"
+import { Icons } from "@/icons"
+import { Projects } from "@/types/projects"
 import SpotlightCard from "./spotlight-card"
 import { Badge } from "./ui/badge"
 import { FollowerPointerCard } from "./ui/following-pointer"
 
-const ProjectCard = ({ title, description, tags, url, repositoryUrl }: Projects) => {
+const ProjectCard = ({ imgUrl, title, description, tags, url, repositoryUrl }: Projects) => {
   const { t, i18n } = useTranslation()
   const tagIcons = useMemo(() => {
     const tagIconMap = new Map()
@@ -33,7 +33,14 @@ const ProjectCard = ({ title, description, tags, url, repositoryUrl }: Projects)
                 : `Open project web site ${title}`
             }
           >
-            {/* <img src={imgUrl} alt={title} className="h-auto max-h-64 w-full object-cover" /> */}
+            {imgUrl && (
+              <img
+                src={imgUrl}
+                alt={title}
+                className="aspect-video h-auto max-h-64 w-full rounded-t-md object-cover"
+                loading="lazy"
+              />
+            )}
           </Link>
         </FollowerPointerCard>
         <div className="flex flex-col gap-2 px-4 pt-4 pb-6">

@@ -1,10 +1,11 @@
+import { createFileRoute } from "@tanstack/react-router"
+import { useTranslation } from "react-i18next"
 import AboutMe from "@/components/sections/about-me"
 import Contact from "@/components/sections/contact"
 import Hero from "@/components/sections/hero"
 import Projects from "@/components/sections/projects"
+import Skills from "@/components/sections/skills"
 import { useDocumentTitle } from "@/hooks/useDocumentTitle"
-import { createFileRoute } from "@tanstack/react-router"
-import { useTranslation } from "react-i18next"
 
 export const Route = createFileRoute("/")({
   component: HomeComponent,
@@ -15,8 +16,8 @@ function HomeComponent() {
 
   useDocumentTitle(
     i18n.language === "es"
-      ? "Valentín Vera - Desarrollador Front-End"
-      : "Valentín Vera - Front-End Developer",
+      ? "Valentín Vera - Desarrollador Full Stack"
+      : "Valentín Vera - Full Stack Developer",
   )
 
   return (
@@ -24,6 +25,7 @@ function HomeComponent() {
       <Hero />
       <Projects />
       <AboutMe />
+      <Skills />
       <Contact />
     </>
   )

@@ -5,7 +5,7 @@ const Contact = () => {
   const { t } = useTranslation()
 
   return (
-    <section>
+    <section id="contact">
       <div>
         <h2 className="mb-2 ml:mb-4 font-medium ml:text-3xl text-2xl">
           {t("main.contact_me.title")}
