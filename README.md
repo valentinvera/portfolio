@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://valentinvera.vercel.app">
-    <img src="public/static/preview.webp" alt="Valentin Vera portfolio preview">
+    <img src="public/static/readme-preview.png" alt="Valentin Vera portfolio preview">
   </a>
   <p></p>
 </div>
@@ -40,10 +40,6 @@
 ![GitHub issues](https://img.shields.io/github/issues/valentinvera/portfolio)
 
 </div>
-
-# Valentin Vera Portfolio
-
-Personal portfolio for Valentín Vera, Full Stack Developer and product creator building products that help people and solve real problems.
 
 ## Stack
 
