@@ -2,6 +2,10 @@ export type Stack =
   | "React"
   | "Tailwind CSS"
   | "TypeScript"
+  | "TanStack"
+  | "tRPC"
+  | "Turbo"
+  | "Expo"
   | "Next"
   | "Nest"
   | "Shadcn/ui"
@@ -16,7 +20,15 @@ export type Stack =
   | "Hono"
   | "Astro"
   | "Supabase"
-  | "Uptash"
+  | "Upstash"
+  | "AI SDK"
+  | "Resend"
+  | "Better Auth"
+  | "Polar"
+  | "Neon"
+  | "Plunk"
+  | "Uniwind"
+  | "Vite"
 
 export interface Projects {
   imgUrl: string

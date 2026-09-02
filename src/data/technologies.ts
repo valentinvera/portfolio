@@ -9,7 +9,7 @@ interface Technologies {
 
 export const technologies: Technologies[] = [
   {
-    stack: "Uptash",
+    stack: "Upstash",
     icon: Icons.uptash,
   },
   {
@@ -53,6 +53,26 @@ export const technologies: Technologies[] = [
     icon: Icons.typescript,
   },
   {
+    stack: "DrizzleORM",
+    icon: Icons.drizzle,
+  },
+  {
+    stack: "TanStack",
+    icon: Icons.tanstack,
+  },
+  {
+    stack: "tRPC",
+    icon: Icons.trpc,
+  },
+  {
+    stack: "Turbo",
+    icon: Icons.turbo,
+  },
+  {
+    stack: "Expo",
+    icon: Icons.expo,
+  },
+  {
     stack: "MongoDB",
     icon: Icons.mongodb,
   },
@@ -75,5 +95,37 @@ export const technologies: Technologies[] = [
   {
     stack: "Shadcn/ui",
     icon: Icons.shadcnui,
+  },
+  {
+    stack: "Better Auth",
+    icon: Icons.betterAuth,
+  },
+  {
+    stack: "Polar",
+    icon: Icons.polar,
+  },
+  {
+    stack: "Neon",
+    icon: Icons.neon,
+  },
+  {
+    stack: "Plunk",
+    icon: Icons.plunk,
+  },
+  {
+    stack: "Uniwind",
+    icon: Icons.uniwind,
+  },
+  {
+    stack: "Vite",
+    icon: Icons.vite,
+  },
+  {
+    stack: "AI SDK",
+    icon: Icons.aiSdk,
+  },
+  {
+    stack: "Resend",
+    icon: Icons.resend,
   },
 ]
