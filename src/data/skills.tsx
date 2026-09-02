@@ -44,6 +44,11 @@ export const SkillsData = [
     label: "PostgreSQL",
   },
   {
+    component: <Icons.drizzle size={32} className={iconClassName} />,
+    altText: "Drizzle ORM Icon",
+    label: "Drizzle ORM",
+  },
+  {
     component: <Icons.mongodb size={32} className={iconClassName} />,
     altText: "MongoDB Icon",
     label: "MongoDB",
@@ -87,6 +92,11 @@ export const SkillsData = [
     component: <Icons.tanstack size={32} className={iconClassName} />,
     altText: "TanStack Icon",
     label: "TanStack",
+  },
+  {
+    component: <Icons.trpc size={32} className={iconClassName} />,
+    altText: "tRPC Icon",
+    label: "tRPC",
   },
   {
     component: <Icons.vite size={32} className={iconClassName} />,
