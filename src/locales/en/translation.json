@@ -27,6 +27,10 @@
         "Motiq": {
           "title": "Motiq",
           "description": "Customer intelligence platform for B2B SaaS teams with AI agents that monitor feedback 24/7, detect critical signals, and alert the right people."
+        },
+        "Mavry": {
+          "title": "Mavry",
+          "description": "Decision layer for early-stage products that helps organize ideas, validate opportunities, and move forward with more clarity."
         }
       },
       "not_found": "No projects were found matching '{{searchTerm}}'"

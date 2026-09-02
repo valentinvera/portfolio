@@ -27,6 +27,10 @@
         "Motiq": {
           "title": "Motiq",
           "description": "Plataforma de inteligencia de clientes para B2B SaaS con agentes de IA que monitorean feedback 24/7, detectan señales críticas y alertan al equipo indicado."
+        },
+        "Mavry": {
+          "title": "Mavry",
+          "description": "Capa de decisiones para productos en etapa temprana que ayuda a organizar ideas, validar oportunidades y avanzar con más claridad."
         }
       },
       "not_found": "No se encontraron proyectos que coincidan con '{{searchTerm}}'"
